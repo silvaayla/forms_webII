@@ -15,7 +15,7 @@ body {
   max-width: 600px;
   margin: 50px 20px;
   padding: 40px 40px;
-  background-color: #ffffff; /* branco */
+  background-color: #f0f878; /* branco */
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(51, 0, 67, 0.2);
   display: flex;
@@ -29,14 +29,14 @@ header {
 }
 
 .logo {
-  width: 160px;
+  width: 120px;
   margin-bottom: 10px;
 }
 
 .heading {
   font-size: 22px;
   font-weight: 800;
-  color: #330043; /* roxo */
+  color: #c41e84; /* roxo */
   margin: 0;
 }
 
@@ -49,7 +49,7 @@ label {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #330043; /* roxo */
+  color: #c41e84/* rosa*/
 }
 
 input[type="text"],
@@ -58,9 +58,9 @@ input[type="email"],
 textarea {
   width: calc(100% - 24px); /* Ajuste para a largura dos inputs */
   padding: 12px;
-  border: 2px solid #330043; /* roxo */
+  border: 2px solid #c41e84; /* roxo */
   border-radius: 8px;
-  background-color: rgba(51, 0, 67, 0.2); /* roxo com transparência */
+  background-color: rgba(42, 206, 235, 0.2); /* azul com transparência */
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -80,7 +80,7 @@ textarea:focus {
 
 
 .btn {
-  background-color: #330043; /* roxo */
+  background-color: #c41e84; /* roxo */
   color: #ffffff; /* branco */
   width: 100%; /* Ocupa toda a largura do container */
   padding: 14px;
@@ -93,5 +93,5 @@ textarea:focus {
 }
 
 .btn:hover {
-  background-color: rgba(51, 0, 67, 0.67); /* tom mais escuro de roxo */
+  background-color: rgba(58, 209, 247, 0.67); /* tom mais escuro de roxo */
 }
