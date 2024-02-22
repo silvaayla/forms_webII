@@ -15,7 +15,7 @@ body {
   max-width: 600px;
   margin: 50px 20px;
   padding: 40px 40px;
-  background-color: #f0f878; /* branco */
+  background-color:#f0f878; /* branco */
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(51, 0, 67, 0.2);
   display: flex;
@@ -94,4 +94,76 @@ textarea:focus {
 
 .btn:hover {
   background-color: rgba(58, 209, 247, 0.67); /* tom mais escuro de roxo */
+}
+
+
+
+/* Estilização da tabela */
+.container {
+  margin: 50px 20px;
+  padding: 40px 40px;
+  background-color: #f0f878; /* branco */
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(51, 0, 67, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f878;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-tabela {
+  max-width: 100%;
+  min-width: 700px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #c41e84;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: rgba(60, 245, 245, 0.2);
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tabela-vazia span {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #330043;
+}
+
+.btn-excluir {
+  padding: 5px 10px;
+  background-color: #c41e84;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-excluir:hover {
+  background-color: #2fcbd6;
 }

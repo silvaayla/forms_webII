@@ -14,6 +14,9 @@
   </head>
   <body>
     <div class="container">
+      <div class="buttons">
+<a href="/listagem.html" class="btn">Ver formulário</a>
+      </div>
       <header>
         <img src="/assets/logo.png" alt="Logo" class="logo" />
         <h1 class="heading">Formulário para adoção de cães e gatos</h1>
@@ -32,8 +35,8 @@
           <input type="email" id="email" name="email" required />
         </div>
         <div class="form-group">
-          <label for="email">Qual a sua motivação para adotar um animal de estimação?</label>
-          <input type="text" id="text" name="text" required />
+          <label for="motivo">Qual a sua motivação para adotar um animal de estimação?</label>
+          <input type="text" id="motivo" name="motivo" required />
         </div>
         <div class="form-group">
           <label for="descricao">Você possui outros animais de estimação? Se sim, quantos?</label>
@@ -58,6 +61,7 @@
         const telefone = document.getElementById("telefone").value;
         const email = document.getElementById("email").value;
         const descricao = document.getElementById("descricao").value;
+        const motivo = document.getElementById("motivo").value;
 
         // Cria uma variável com os dados do formulário
         const dados = {
@@ -65,19 +69,22 @@
           telefone: telefone,
           email: email,
           descricao: descricao,
+          motivo: motivo,
         };
         console.log(dados);
         console.log(JSON.stringify(dados));
 
         try {
           // Faz uma requisição para a sua API
-          await fetch("INSIRA O LINK DA SUA API AQUI", {
+          await fetch("https://meu-primeiro-banco-de-dado.onrender.com/formulario", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
             body: JSON.stringify(dados),
           });
+
+          alert("formulário cadastrado com sucesso")
         } catch (error) {
           console.log(error);
         }
